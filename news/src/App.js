@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { StoriesContainer } from "./containers/StoriesContainer";
 
-export const App = () => <p>Helo there!?</p>;
+export const App = () => <StoriesContainer />;
 
 export default App;
