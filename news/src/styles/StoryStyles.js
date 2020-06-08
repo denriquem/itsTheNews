@@ -29,24 +29,21 @@ export const StoryTitle = styled.h1`
   }
 `;
 
-export const StoryMeta =
-  styled.div`
+export const StoryMeta = styled.div`
   font-style: italic;
-
-  > span;not(:first-child):before {
-      content: ` *
-  `
-      margin-right: 7px;
-      margin-left; 7px;
+  > span:first-child {
+    margin-right: 10px;
   }
-
-  .story_meta-bold {
-      font-weight: bold;
+  > span:not(:first-child):before {
+    contect: "•";
+    margin: 0 7px;
   }
-
+  .story__meta-bold {
+    font-weight: bold;
+  }
 `;
 
 export const StoryMetaElement = styled.span`
   font-wieght: bold;
-  color: ${(props) => props.colour || "red"};
+  color: ${(props) => props.color || "red"};
 `;
